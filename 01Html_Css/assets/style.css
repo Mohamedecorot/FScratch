@@ -73,3 +73,34 @@ h3 {
     font-size: 3em;
     text-shadow: 1px 3px 2px black;
 }
+
+/* *************** PRESENTATION ********************** */
+#presentation {
+    background-color: #FFFAE1;
+    padding: 10px 0px 100px 0;
+  }
+#texteIntro {
+    padding: 0px 20%;
+}
+#prestations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px 10%;
+}
+.imagesPrestations h4 {
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    font-size: 1.8em;
+    margin: 15px;
+    font-weight: 300;
+}
+  .imagesPrestations img {
+    border-radius: 10px;
+    box-shadow: 5px 5px 3px 1px rgba(0,0,0,0.7);
+}
+.imagesPrestations img:hover {
+    opacity: 0.5;
+    transform: scale(1.05);
+    transition: 0.6s ease-in-out;
+}
