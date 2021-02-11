@@ -50,3 +50,26 @@ header li a {
   float: left;
 }
 
+
+/* **************** IMAGE PRINCIPALE ************* */
+h1 {
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    color: antiquewhite;
+    font-size: 6em;
+    margin-top: 100px;
+    text-shadow: 1px 3px 2px black;
+}
+#premierTrait {
+    height: 1px;
+    width: 25%;
+    margin: -3px auto;
+    background-color: #FFFAE1;
+    box-shadow: 1px 3px 2px black;
+}
+h3 {
+    text-align: center;
+    color:antiquewhite;
+    font-size: 3em;
+    text-shadow: 1px 3px 2px black;
+}
