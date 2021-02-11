@@ -104,3 +104,40 @@ h3 {
     transform: scale(1.05);
     transition: 0.6s ease-in-out;
 }
+/* **************** TENDANCE ********************** */
+#tendance {
+    height: 1400px;
+    background-color: #f1f2f6;
+    padding: 1px 2%;
+}
+#tendance h2 {
+    padding-top: 60px;
+}
+#tendance li {
+    margin: 65px 100px 0 100px;
+    height: 226px;
+    width: 55%;
+    max-width: 550px;
+    float: left;
+    box-shadow: 6px 6px 28px -1px rgba(0,0,0,0.75);
+}
+#tendance p {
+    height: 45px;
+    width: 235px;
+    background-color: #01DF74;
+    float:right;
+    margin: 50px -180px 0 0;
+    font-size: 1.5em;
+    text-align: center;
+    padding-top: 15px;
+    box-shadow: 4px 4px 0 1px rgba(90,161,43,1);
+}
+ #tendance #tendance2, #tendance #tendance4 {
+    float: right;
+}
+#tendance2 p, #tendance4 p {
+    float: left;
+    background-color: cyan;
+    margin-left: -180px;
+    box-shadow: -4px 4px 0 1px rgba(15,154,156,1);
+}
