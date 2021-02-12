@@ -85,13 +85,13 @@ h1 {
     padding: 50px 0;
   }
   #transition img{
-    animation: rateau ease 12s;
+    animation: om ease 12s;
     animation-iteration-count: infinite;
     transform-origin: 50% 50%;
     animation-fill-mode:forwards; /*when the spec is finished*/
   }
 
-  @keyframes rateau{
+  @keyframes om{
     0% {
       transform:  translate(0px,0px)  ;
     }
