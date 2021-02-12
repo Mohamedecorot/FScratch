@@ -1,0 +1,32 @@
+html {
+    scroll-behavior: smooth;
+}
+h2, h3, h4, .nav-item, #transition, footer {
+    text-align: center;
+}
+
+/* ******************* HEADER **************** */
+header {
+    background: url(./img/main.jpg)no-repeat 50% 50%;
+    background-size: cover;
+    height: 100vh;
+    border-radius: 0px 0px 20px 20px;
+    margin-bottom: 40px;
+}
+h1 {
+    font-size: 5em;
+    padding: 65px 0 0 29%;
+    text-shadow: -3px 3px 2px #32b4db;
+    animation: titre ease 5s;
+}
+
+@keyframes titre {
+    0% {
+      opacity: 0;
+      transform: translateY(350px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+}
