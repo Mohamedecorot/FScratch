@@ -6,8 +6,16 @@ h2, h3, h4, .nav-item, #transition, #newsletter, footer {
 }
 
 /* ******************* HEADER **************** */
+.collapse {
+  margin-left: 4%;
+}
+.nav-item {
+  color: rgb(174, 238, 238);
+  font-weight: bold;
+  padding-right: 45px;
+}
 header {
-    background: url(./img/main.jpg)no-repeat 50% 50%;
+    background: url('../img/main.jpg') no-repeat 50% 50%;
     background-size: cover;
     height: 100vh;
     border-radius: 0px 0px 20px 20px;
@@ -123,7 +131,7 @@ h1 {
 
 /* *************************** NEWSLETTER ********************** */
 #newsletter {
-    background: url(./img/newsletter.jpg) no-repeat 50% 50%;
+    background: url("../img/newsletter.jpg") no-repeat 50% 50%;
     background-size: cover;
     height: 370px;
     width: 70%;
