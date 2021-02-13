@@ -1,5 +1,24 @@
+@import url("https://fonts.googleapis.com/css?family=Helvetica|Megrim&display=swap");
 body {
-  background-color: black;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  font-family: "Helvetica", cursive;
+  color: #000;
+  background-color: #f5f5f7;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+a:visited {
+  color: #000;
 }
 
 /*# sourceMappingURL=style.css.map */
