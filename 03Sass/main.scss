@@ -176,3 +176,42 @@ a {
         transform: translateZ(35px)
     }
 }
+
+// ******************** BUTTON *********************
+@mixin dash ($array, $offset, $width) {
+    stroke-dasharray: $array;
+    stroke-dashoffset: $offset;
+    stroke-width: $width;
+}
+
+.button {
+    padding-top: 80px;
+    position: relative;
+    margin: 0 auto;
+    width: 340px;
+
+    &:hover
+      &__rect {
+        @include dash(860,0, 2px)
+      }
+
+    &__rect {
+      fill: transparent;
+      stroke: $black;
+      border-bottom: 5px solid $grey;
+
+      transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+      @include dash(140 540, -474, 8px)
+    }
+
+    &__text {
+      position: relative;
+      text-align: center;
+      font-size: 32px;
+      line-height: 28px;
+      letter-spacing: 7px;
+      color: $black;
+      top: -61px;
+      left: -7px;
+    }
+}
