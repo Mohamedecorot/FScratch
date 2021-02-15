@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  min-height: 10vh;
+  align-items: center;
+  margin: auto;
+  padding: 0 2rem;
+  background: purple;
+  color: white;
+  position: relative;
+  box-shadow: 0 0 4px #333;
+}
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+.nav-links li {
+  padding: 1rem;
+}
+.nav-links, h2 {
+  flex: 1;
+}
+p {
+  margin: 3rem 2rem;
+}
+
+.label {
+  visibility: hidden;
+  font-size: 1.5rem;
+  position: absolute;
+  right: 3rem;
+}
+.label:hover {
+  cursor:pointer;
+}
+.fas {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media screen and (max-width: 600px){
+  .nav-links {
+    display: none;
+  }
+  .fa-hamburger {
+    visibility: visible;
+  }
+}
+
+#hamburger{
+  display: none;
+}
+#hamburger:checked + label .fa-hamburger {
+  visibility: hidden;
+}
+#hamburger:checked + label .fa-times {
+  visibility: visible; 
+}
+#hamburger:checked ~ .nav-links {
+  display: block;
+}
+
+@media screen and (min-width: 600px){
+  .fa-times {
+    visibility: hidden !important;
+  }
+  .nav-links {
+    display: flex !important;
+  }
+}
