@@ -1,0 +1,39 @@
+section {
+  display: flex;
+  justify-content: center;
+}
+.bg {
+  height: 200px;
+  width: 200px;
+  margin: 4rem 0.1rem;
+  position: relative;
+  box-shadow: 0 20px 45px rgba(0,0,0,0.3);
+  transition: 0.7s ease-in;
+}
+.bg:after {
+  content: '';
+  height: inherit;
+  width: inherit;
+  background: inherit;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  bottom: -100%;
+  transform: rotateX(180deg);
+  overflow: hidden;
+}
+.bg:before {
+  content: '';
+  height: inherit;
+  width: inherit;
+  background-image: linear-gradient(to bottom, rgba(255,255,255,0.1), #fff 100%);
+  position: absolute;
+  bottom: -100%;
+  z-index: 10;
+  overflow: hidden;
+}
+.bg:hover {
+  transform: scale(1.3);
+  z-index: 100;
+}
