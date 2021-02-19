@@ -164,6 +164,9 @@ footer {
   }
 }
 @media screen and (max-width: 990px) {
+  #leftPart {
+      margin-bottom: 10px;
+  }
   #rightPart {
     display: flex;
   }
@@ -194,13 +197,12 @@ footer {
   }
   .spec {
     height: 90px;
-    width: 90px;
   }
   .spec h4 {
     font-size: 0.9em;
   }
   footer {
-    margin-top: 140px;
+    margin-top: 150px;
 }
 }
 @media screen and (max-width: 580px) {
@@ -214,5 +216,21 @@ footer {
   nav {
     display: none !important;
   }
+  #rightPart, #rightPart h2 {
+    display: block;
+  }
+  .spec {
+    width: 200px;
+    height: 200px;
+  }
 }
-
+@media screen and (max-width: 500px){
+  #newsletter {
+    background: none;
+    min-width: 350px;
+    height: 30px;
+  }
+  #newsletter h4 {
+    padding-top: 0;
+  }
+}
