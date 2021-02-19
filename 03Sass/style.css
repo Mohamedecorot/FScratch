@@ -2,6 +2,8 @@
 body {
   margin: 0;
   padding: 0;
+  height: 100vh;
+  overflow: hidden;
   position: relative;
   font-family: "Helvetica", cursive;
   color: #000;
@@ -142,12 +144,6 @@ a:visited {
   display: flex;
   justify-content: space-between;
 }
-@media (max-width: 1240px) {
-  .perspective {
-    display: block;
-    margin-bottom: 10px;
-  }
-}
 .perspective__3d {
   width: 400px;
   height: 280px;
@@ -155,11 +151,6 @@ a:visited {
   box-shadow: 0 70px 63px -60px #494848;
   transform-style: preserve-3d;
   transition: transform 0.05s linear;
-}
-@media (max-width: 1240px) {
-  .perspective__3d {
-    padding-bottom: 20px;
-  }
 }
 .perspective__3d--card {
   background-size: cover;
@@ -195,11 +186,6 @@ a:visited {
   font-size: 0.8em;
   font-weight: 600;
   transform: translateZ(35px);
-}
-@media (max-width: 1240px) {
-  .perspective {
-    transform: translateZ(0px);
-  }
 }
 
 .button {
