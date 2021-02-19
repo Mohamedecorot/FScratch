@@ -19,7 +19,6 @@ li {
 h2 {
   text-transform: uppercase;
   text-align: center;
-  padding-top: 30px;
   font-size: 2em;
 }
 a {
@@ -28,28 +27,77 @@ a {
 }
 /* ******************* NAVBAR ******************* */
 nav {
-  overflow: hidden;
-  background-color: #FFFAE1;
-  position: fixed;
-  width: 100%;
-  opacity: 0.9;
+  display: flex;
+  justify-content: space-between;
+  min-height: 10vh;
+  align-items: center;
+  margin: auto;
+  padding: 0 2rem;
+  background: #FFFAE1;
+  color: black;
+  position: relative;
+  box-shadow: 0 0 4px #333;
 }
-header li {
-  float: right;
-  font-size: 1.2em;
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
 }
-header li a {
-  text-decoration: none;
-  display: block;
-  text-align: center;
-  padding: 18px 16px;
+.nav-links li {
+  padding: 1rem;
 }
+
 #logo {
   font-family: 'Dancing Script', cursive;
   font-weight: bold;
   float: left;
+  font-size: 1em;
 }
 
+.label {
+  visibility: hidden;
+  font-size: 1.5rem;
+  position: absolute;
+  right: 3rem;
+}
+.label:hover {
+  cursor:pointer;
+}
+.fas {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media screen and (max-width: 600px){
+  .nav-links {
+    display: none;
+  }
+  .fa-hamburger {
+    visibility: visible;
+  }
+}
+
+#hamburger{
+  display: none;
+}
+#hamburger:checked + label .fa-hamburger {
+  visibility: hidden;
+}
+#hamburger:checked + label .fa-times {
+  visibility: visible;
+}
+#hamburger:checked ~ .nav-links {
+  display: block;
+}
+
+@media screen and (min-width: 600px){
+  .fa-times {
+    visibility: hidden !important;
+  }
+  .nav-links {
+    display: flex !important;
+  }
+}
 
 /* **************** IMAGE PRINCIPALE ************* */
 h1 {
@@ -110,9 +158,6 @@ h3 {
     background-color: #f1f2f6;
     padding: 1px 2%;
 }
-#tendance h2 {
-    padding-top: 60px;
-}
 #tendance li {
     margin: 65px 100px 0 100px;
     height: 226px;
@@ -120,6 +165,9 @@ h3 {
     max-width: 550px;
     float: left;
     box-shadow: 6px 6px 28px -1px rgba(0,0,0,0.75);
+}
+#tendance li:nth-child(1) {
+  margin-top: 10px !important;
 }
 #tendance p {
     height: 45px;
@@ -204,4 +252,64 @@ button:hover {
 #icons a:hover {
     transform: scale(1.5);
     transition: 0.1s;
+}
+
+/* ********************** MEDIA QUERIES *********************** */
+@media screen and (max-width: 770px) {
+  #texteIntro {
+    padding: 0px 10%;
+  }
+  h2 {
+    padding-top: 0;
+  }
+  #prestations {
+    padding: 10px 2%;
+  }
+  #presentation {
+    padding-bottom: 10px;
+  }
+  #tendance h2 {
+    padding-top: 0 !important;
+  }
+  #tendance li {
+    margin: 0;
+    margin-top: 80px !important;
+    width: 100% !important;
+    float: none;
+  }
+  #tendance li:nth-child(1) {
+    margin-top: 80px !important;
+  }
+   #tendance #tendance2, #tendance #tendance4 {
+     float: none;
+  }
+  #tendance p {
+    position: absolute;
+    float: none;
+    margin-left: 0;
+    margin-top: -60px;
+    box-shadow: none;
+  }
+  footer {
+    margin-top: 0;
+    float: none;
+  }
+}
+@media screen and (max-width: 635px) {
+  #texteIntro {
+    padding: 0px 10%;
+  }
+  #prestations {
+    display: block;
+  }
+  .image {
+    margin: 0 auto;
+    width: 200px;
+  }
+}
+@media screen and (max-width: 363px) {
+  #tendance li:nth-child(1) {
+    margin: 0;
+    margin-top: 170px !important;
+  }
 }
