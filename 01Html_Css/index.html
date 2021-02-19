@@ -6,20 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chez Léo</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
     <header>
         <nav>
-            <ul>
-                <li id="logo"><a href="#">Chez Léo</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#">Tarif</a></li>
-                <li><a href="#tendance">Nouvelles tendances</a></li>
-                <li><a href="#presentation">Présentation</a></li>
-            </ul>
+          <input type="checkbox" id="hamburger" />
+          <label for="hamburger" class="label">
+            <i class="fas fa-hamburger"></i>
+            <i class="fas fa-times"></i>
+          </label>
+
+          <h2 id="logo">Chez Léo</h2>
+          <ul class="nav-links">
+            <li><a href="#presentation">Présentation</a></li>
+            <li><a href="#tendance">Nouvelles tendances</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </nav>
-        <div id="imagePrincipale" style="padding-top: 60px; background: url(assets/img/imageprincipale.jpg) no-repeat fixed 50% 50%; background-size: cover; height: 529px;;">
+
+        <div id="imagePrincipale" style="padding-top: 60px; background: url(assets/img/imageprincipale.jpg) no-repeat center; fixed 50% 50%; background-size: cover; height: 529px;;">
             <h1>Chez Léo</h1>
             <div id="premierTrait"></div>
             <h3>Salon de coiffure</h3>
@@ -33,27 +40,33 @@
         <div id="prestations">
             <div class="imagesPrestations">
                 <h4>Coiffure homme</h4>
-                <a href="#"><img src="assets/img/homme.JPG" alt="homme"></a>
+                <div class="image">
+                  <a href="#"><img src="assets/img/homme.jpg" alt="homme"></a>
+                </div>
             </div>
 
             <div class="imagesPrestations">
                 <h4>Coiffure enfant</h4>
-                <a href="#"><img src="assets/img/enfant.JPG" alt="enfant"></a>
+                <div class="image">
+                  <a href="#"><img src="assets/img/enfant.jpg" alt="enfant"></a>
+                </div>
             </div>
 
             <div class="imagesPrestations">
                 <h4>Nous trouver</h4>
-                <a href="#"><img src="assets/img/carte.JPG" alt="carte"></a>
+                <div class="image">
+                  <a href="#"><img src="assets/img/carte.jpg" alt="carte"></a>
+                </div>
             </div>
         </div>
     </section>
     <section id="tendance">
         <h2>Les nouvelles tendance</h2>
         <ul>
-            <li id="tendance1" style="background: url(assets/img/tendance1.jpg);"><p>Tendance</p></li>
-            <li id="tendance2" style="background: url(assets/img/tendance2.jpg);"><p>Tendance</p></li>
-            <li id="tendance3" style="background: url(assets/img/tendance3.jpg);"><p>Tendance</p></li>
-            <li id="tendance4" style="background: url(assets/img/tendance4.jpg);"><p>Tendance</p></li>
+            <li id="tendance1" style="background: url(assets/img/tendance1.jpg) no-repeat center/cover;"><p>Tendance</p></li>
+            <li id="tendance2" style="background: url(assets/img/tendance2.jpg) no-repeat center/cover;"><p>Tendance</p></li>
+            <li id="tendance3" style="background: url(assets/img/tendance3.jpg) no-repeat center/cover;"><p>Tendance</p></li>
+            <li id="tendance4" style="background: url(assets/img/tendance4.jpg) no-repeat center/cover;"><p>Tendance</p></li>
         </ul>
     </section>
 
