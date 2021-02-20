@@ -5,59 +5,51 @@ body {
     padding: 0;
     margin: 0;
     font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    color: white ;
+    background-color: black;
 }
-/* ******************* HEADER **************** */
 
-.img_header, .img_noir {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
+/* ******************* HEADER **************** */
+header {
+    text-align: center;
+    height: 100vh;
+    background: url(./img/header.jpg) no-repeat fixed 50% 50%;
+    background-size: cover;
 }
-.img_noir {
-    z-index: 2;
-    opacity: 0.7;
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.barre {
+    margin: 0 3.5rem;
 }
 .logo {
-    position: absolute;
-    top: -15px;
-    left: 50px;
-    z-index: 3;
+    float: left;
     width: 200px;
-    height: auto;
-    padding: 0;
+    margin-top: 30px;
 }
 .btn-id {
-    position: absolute;
-    top: 25px;
-    right: 80px;
-    z-index: 3;
+    float: right;
     padding: 0;
     color: white;
     background-color: #e50914;
     padding: 7px 17px;
+    margin-top: 30px;
     font-weight: 400;
     font-size: 1rem;
     border-radius: 5px;
     line-height: normal;
 }
-.center h2, .center h3, .center h4 {
-    color: white;
-}
-.center {
-    z-index: 3;
-    text-align: center;
-    position: relative;
-    top: 300px;
-}
-.center h2 {
+.abonnement h2 {
     font-size: 3.725rem;
     margin: 0;
 }
-.center h3 {
+.abonnement h3 {
     font-size: 2.225rem;
 }
-.center h4 {
+.abonnement h4 {
     font-size: 1.2rem;
 }
 .input_email {
