@@ -108,3 +108,30 @@ header {
 .mobile {
     margin-right: 100px;
 }
+
+/* ******************* REGARDER **************** */
+.faq h1 {
+    font-size: 3rem;
+    line-height: 1.1;
+    margin-top: 3.5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.ask {
+    padding: .8em 2.2em .8em 1.2em;
+    margin: 0 20%;
+    margin-top: 7px;
+    font-weight: 400;
+    position: relative;
+    width: 60%;
+    border: 0;
+    display: block;
+    text-align: left;
+    background: #303030;
+    color: white;
+    font-size: 27px ;
+}
+.ask:hover {
+    cursor: pointer;
+}
