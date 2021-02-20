@@ -9,6 +9,15 @@ body {
     background-color: black;
 }
 
+.ligne {
+  height: 10px;
+  background-color: #222222;
+  margin: 0 auto;
+  width: 100%;
+}
+h2, h3, h4, h5 {
+    margin: .75em 0 .25em;
+}
 /* ******************* HEADER **************** */
 header {
     text-align: center;
@@ -67,4 +76,31 @@ header {
     font-size: 1.5rem;
     border-radius: 5px;
     line-height: normal;
+}
+/* ******************* REGARDER **************** */
+.contenu-regarder {
+    padding: 70px 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.texte {
+    width: 52%;
+    height: 100%;
+    flex: 0 1 auto;
+    padding: 30px 3rem 0 0;
+    max-width: 550px;
+}
+.texte h1 {
+    font-size: 3.125rem;
+    line-height: 1.1;
+    margin-bottom: .5rem;
+    margin: 0 0 .4em;
+}
+.texte h2 {
+    font-size: 1.625rem;
+    font-weight: 400;
+ }
+.television {
+    width: 500px;
 }
