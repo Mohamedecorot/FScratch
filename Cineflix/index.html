@@ -73,16 +73,54 @@
         <h1>Foire aux questions</h1>
         <div class="question">
             <form >
-                <button class="ask">Cinéflix, qu'est-ce que c'est ?</button>
-                <button class="ask">Combien coûte Cinéflix ?</button>
-                <button class="ask">Où puis-je regarder Cinéflix ?</button>
-                <button class="ask">Comment puis-je annuler mon forfait ?</button>
-                <button class="ask">Que puis-je regarder sur Cinéflix ?</button>
+                <span class="ask" onclick="afficher_cacher('answer1');">Cinéflix, qu'est-ce que c'est ?</span>
+                <div class="answer" id="answer1">
+                    <span>
+                        <p>Cinéflix est un service de streaming qui propose une vaste sélection de séries TV, films, animes, documentaires et autres programmes primés sur des milliers d'appareils connectés à Internet.</p>
+                        <p>Regardez tout ce que vous voulez, quand vous voulez, sans publicité et à un tarif mensuel très attractif. Découvrez de nouveaux films et séries TV chaque semaine, il y en a pour tous les goûts !</p>
+                    </span>
+                </div>
+                <span class="ask" onclick="afficher_cacher('answer2');">Combien coûte Cinéflix ?</span>
+                <div class="answer" id="answer2">
+                    <span>
+                        <p>Regardez Cinéflix sur votre smartphone, tablette, Smart TV, ordinateur ou appareil de streaming, le tout pour un tarif mensuel fixe. Les forfaits vont de 7,99 € à 15,99 € par mois. Pas de contrat ni de frais supplémentaires.</p>
+                    </span>
+                </div>
+                <span class="ask" onclick="afficher_cacher('answer3');">Où puis-je regarder Cinéflix ?</span>
+                <div class="answer" id="answer3">
+                    <span>
+                        <p>Regardez où et quand vous voulez, sur un nombre illimité d'appareils. Connectez-vous à votre compte pour regarder Cinéflix en ligne sur Cinéflix.com depuis votre ordinateur ou tout appareil connecté à Internet avec l'application Cinéflix, comme les Smart TV, smartphones, tablettes, lecteurs de streaming et consoles de jeu.</p>
+                        <p>Vous pouvez aussi télécharger vos séries préférées avec l'application iOS, Android ou Windows 10. Téléchargez des titres pour les regarder sur votre appareil mobile, même sans connexion Internet. Emportez Cinéflix partout avec vous.</p>
+                    </span>
+                </div>
+                <span class="ask" onclick="afficher_cacher('answer4');">Comment puis-je annuler mon forfait ?</span>
+                <div class="answer" id="answer4">
+                    <span>
+                        <p>Cinéflix offre une grande souplesse. Pas de contrat compliqué. Sans engagement. Deux clics suffisent pour annuler votre compte en ligne. Pas de frais d'annulation : ouvrez ou fermez votre compte à tout moment.</p>
+                    </span>
+                </div>
+                <span class="ask" onclick="afficher_cacher('answer5');">Que puis-je regarder sur Cinéflix ?</span>
+                <div class="answer" id="answer5">
+                    <span>
+                        <p>Cinéflix propose un vaste catalogue comprenant notamment des longs métrages, des documentaires, des séries TV, des animes et des programmes originaux Cinéflix primés. Regardez Cinéflix à volonté, quand vous le voulez.</p>
+                    </span>
+                </div>
             </form>
         </div>
         <h3>Prêt à regarder Cinéflix ? Saisissez votre adresse e-mail pour vous abonner ou réactiver votre abonnement.</h3>
+        <div class="center">
+            <div>
+                <form action="">
+                    <input class="input_email" type="email" placeholder="Adresse e-mail">
+                    <button class="btn-begin">Commencer ></button>
+                </form>
+            </div>
+        </div>
 
         <div class="ligne"></form>
     </section>
+
+
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
