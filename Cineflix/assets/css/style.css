@@ -18,6 +18,14 @@ body {
 h2, h3, h4, h5 {
     margin: .75em 0 .25em;
 }
+li {
+    list-style: none;
+    float: left;
+}
+a {
+    text-decoration: none;
+    color: #222222;
+}
 /* ******************* HEADER **************** */
 header {
     text-align: center;
@@ -164,4 +172,13 @@ header {
     justify-content: center;
     align-items: center;
     margin-bottom: 75px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.li a {
+    display: block;
 }
