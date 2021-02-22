@@ -216,3 +216,62 @@ select {
     padding: 15px;
 }
 
+/* *********************** MEDIA QUERIES ********************** */
+@media screen and (max-width: 950px) {
+    .contenu-regarder {
+        display: block;
+        margin: 0 auto;
+    }
+    .texte {
+        max-width: none;
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+    .tele {
+        text-align: center;
+    }
+    .mobile {
+        margin-right: 0;
+    }
+    h1, h2 {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .faq h3 {
+        margin: 30px 20px 10px 20px;
+    }
+    h1 {
+        font-size: 2.5rem !important;
+    }
+    h2, h3 {
+        font-size: 1.3rem !important;
+    }
+@media screen and (max-width: 900px) {
+    .ask {
+        font-size: 20px;
+    }
+    form {
+        text-align: center;
+    }
+}
+@media screen and (max-width: 660px) {
+    .ask {
+        font-size: 15px;
+    }
+    h1 {
+        font-size: 2rem !important;
+    }
+    h2, h3 {
+        font-size: 1rem !important;
+    }
+}
+@media screen and (max-width: 500px) {
+    .ask {
+        font-size: 13px;
+    }
+    h1 {
+        font-size: 1.7rem !important;
+    }
+}
+}
