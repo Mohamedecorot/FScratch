@@ -146,9 +146,9 @@
                     <p >
                         <input type="text" name="" id="" style="visibility: hidden;">
                     </p>
-                    <select name="lang" id="lang-select">
-                        <option value="Français">Français</option>
-                        <option value="English">English</option>
+                    <select name="lang" id="lang-select" onChange="location.href=''+this.options[this.selectedIndex].value+'.html';">
+                        <option value="index">Français</option>
+                        <option value="index-en">English</option>
                     </select>
                     <p class="footer-country">Netflix France</p>
                 </ul>
