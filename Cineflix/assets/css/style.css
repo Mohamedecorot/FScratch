@@ -47,6 +47,7 @@ header {
     float: left;
     width: 200px;
     margin-top: 30px;
+    margin-left: -20px;
 }
 .btn-id {
     float: right;
@@ -61,14 +62,14 @@ header {
     line-height: normal;
     border: none;
 }
-.abonnement h2 {
+.abonnement h1 {
     font-size: 3.725rem;
     margin: 0;
 }
-.abonnement h3 {
+.abonnement h2 {
     font-size: 2.225rem;
 }
-.abonnement h4 {
+.abonnement h3 {
     font-size: 1.2rem;
 }
 .input_email {
@@ -244,8 +245,11 @@ select {
     h1 {
         font-size: 2.5rem !important;
     }
-    h2, h3 {
+    h2{
         font-size: 1.3rem !important;
+    }
+    h3 {
+        font-size: 1rem !important;
     }
 @media screen and (max-width: 900px) {
     .ask {
@@ -262,8 +266,11 @@ select {
     h1 {
         font-size: 2rem !important;
     }
-    h2, h3 {
+    h2 {
         font-size: 1rem !important;
+    }
+    h3 {
+        font-size: 0.7rem !important;
     }
 }
 @media screen and (max-width: 500px) {
