@@ -39,6 +39,7 @@ header {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    padding-right: 65px !important;
 }
 .barre {
     margin: 0 3.5rem;
@@ -47,30 +48,40 @@ header {
     float: left;
     width: 200px;
     margin-top: 30px;
-    margin-left: -20px;
+    margin-left: 20px;
 }
 .btn-id {
+    margin-top: 30px;
     float: right;
-    padding: 0;
     color: white;
     background-color: #e50914;
     padding: 7px 17px;
     margin-top: 30px;
+    margin-right: 30px;
     font-weight: 400;
     font-size: 1rem;
     border-radius: 5px;
     line-height: normal;
     border: none;
 }
+.big {
+    font-size: 3.525rem !important;
+}
 .abonnement h1 {
-    font-size: 3.725rem;
+    font-size: 3.525rem;
     margin: 0;
+    max-width: 700px;
+    margin: 0 auto;
 }
 .abonnement h2 {
-    font-size: 2.225rem;
+    font-size: 1.425rem;
+    font-weight: lighter;
 }
 .abonnement h3 {
     font-size: 1.2rem;
+    font-weight: lighter;
+    max-width: 700px;
+    margin: 0 auto;
 }
 .input_email {
     padding: 15px 30px;
@@ -90,6 +101,7 @@ header {
     line-height: normal;
     border: none;
     border-radius: 0;
+    margin-top: 10px;
 }
 /* ******************* REGARDER **************** */
 .contenu-regarder {
@@ -251,12 +263,19 @@ select {
     h3 {
         font-size: 1rem !important;
     }
+    .contenu-regarder {
+        padding: 40px 45px;
+    }
+}
 @media screen and (max-width: 900px) {
     .ask {
         font-size: 20px;
     }
     form {
         text-align: center;
+    }
+    .footer-link {
+        padding: 36px 100px;
     }
 }
 @media screen and (max-width: 660px) {
@@ -272,6 +291,20 @@ select {
     h3 {
         font-size: 0.7rem !important;
     }
+    .img-bande {
+        width: 430px;
+    }
+    .footer-link {
+        padding: 36px 30px;
+    }
+    .input_email {
+        width: 300px;
+    }
+}
+@media screen and (max-width: 550px) {
+    .container {
+        padding-right: 192px !important;
+    }
 }
 @media screen and (max-width: 500px) {
     .ask {
@@ -280,5 +313,23 @@ select {
     h1 {
         font-size: 1.7rem !important;
     }
+    .input_email {
+        width: 200px;
+    }
+    .img-bande {
+        width: 350px;
+    }
+    .contenu-regarder {
+        padding: 20px 45px;
+    }
 }
+@media screen and (max-width: 450px) {
+    .img-bande {
+        width: 300px;
+    }
+}
+@media screen and (max-width: 415px) {
+    .container {
+        padding-right: 170px !important;
+    }
 }
