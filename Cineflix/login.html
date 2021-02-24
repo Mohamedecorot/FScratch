@@ -9,23 +9,33 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
 </head>
 <body>
-
+<div class="general">
+    <a href="index.html"><img src="assets/css/img/cineflix.png" alt="cinéflix" class="logo"></a>
     <div class="banner">
         <div class="banner-text">
           <h1>S'identifier</h1>
           <form action="">
-              <input type="text" placeholder="E-mail ou numéro de téléphone"><br>
-              <input type="password" placeholder="Mot de passe"><br>
+              <input class="input" type="text" placeholder="E-mail ou numéro de téléphone"><br>
+              <input class="input" type="password" placeholder="Mot de passe"><br>
               <button class="btn-id">S'identifier</button>
               <div>
-                <input class="checkbox" type="checkbox" checked> Se souvenir de moi
-                <p class="help">Besoin d'aide ?</p>
+                <input class="checkbox" type="checkbox" checked> <span class="p-checkbox">Se souvenir de moi</span>
+                <a class="help" href="index.html">Besoin d'aide ?</a>
               </div>
           </form>
-          <p> S'identifier avec Facebook</p>
-          <P>Première visite sur Cinéflix ? <span style="color: white;">Inscrivez-vous</span></P>
-          <p>Cette page est protégée par Google reCAPTCHA pour nous assurer que vous n'êtes pas un robot.</p>
-          <p style="color: blue;">En savoir plus.</p>
-          <p>Les informations collectées par Google reCAPTCHA sont soumises aux Règles de confidentialité et Conditions d'utilisation de Google, et sont utilisées pour fournir, maintenir et améliorer le service reCAPTCHA, ainsi qu'à des fins de sécurité générale (elles ne sont pas utilisées pour les publicités personnalisées par Google).</p>
+          <div class="fb">
+            <img class="logo_fb" src="assets/css/img/logo_fb.png" alt="logo facebook">
+            <p>&nbsp S'identifier avec Facebook</p>
+          </div>
+          <P>Première visite sur Cinéflix ? <a class="inscription" href="index.html">Inscrivez-vous</a></P>
+          <p class="recaptcha">Cette page est protégée par Google reCAPTCHA pour nous assurer que vous n'êtes pas un robot.</p>
+          <p id="info" style="color: blue;" onclick="afficher_captcha();">En savoir plus.</p>
+          <p id="captcha">Les informations collectées par Google reCAPTCHA sont soumises aux <a href="https://policies.google.com/privacy" target="_blank">Règles de confidentialité</a> et <a href="https://policies.google.com/terms" target="_blank">Conditions d'utilisation</a> de Google, et sont utilisées pour fournir, maintenir et améliorer le service reCAPTCHA, ainsi qu'à des fins de sécurité générale (elles ne sont pas utilisées pour les publicités personnalisées par Google).</p>
         </div>
     </div>
+    <p class="p-footer">Des questions ? Appelez le 0805-220-512</p>
+</div>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>

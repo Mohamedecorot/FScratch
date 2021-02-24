@@ -15,3 +15,9 @@ function afficher_cacher(id)
     return true;
 }
 // http://www.supportduweb.com/scripts_tutoriaux-code-source-33-afficher-cacher-un-div-element-en-javascript.html
+
+function afficher_captcha()
+{
+    document.getElementById('info').style.visibility="hidden";
+    document.getElementById('captcha').style.visibility="visible";
+}
