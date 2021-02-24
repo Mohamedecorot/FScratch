@@ -102,15 +102,17 @@ p {
     font-size: 13px;
     font-weight: 500;
 }
-
 .inscription {
     text-decoration: none;
 }
 .inscription:hover {
     text-decoration: underline;
 }
-#inscription a:visited {
-    color: #0080ff;
+.inscription{
+    color: white;
+}
+.inscription a:visited {
+    color: white;
 }
 .recaptcha {
     font-size: 13px;
@@ -125,7 +127,7 @@ p {
     text-decoration: none !important;
 }
 #captcha a:visited {
-    color: #0080ff;
+    color: #0080ff !important;
 }
 #info {
     color: #0080ff !important;
