@@ -31,7 +31,7 @@ a {
 header {
     text-align: center;
     height: 100vh;
-    background: url(./img/header.jpg) no-repeat fixed 50% 50%;
+    background: url(./img/header.jpg) no-repeat 50% 50%;
     background-size: cover;
 }
 .container {
@@ -82,6 +82,7 @@ header {
     font-weight: lighter;
     max-width: 700px;
     margin: 0 auto;
+    margin-bottom: 10px;
 }
 .input_email {
     padding: 15px 30px;
@@ -294,6 +295,9 @@ select {
     .img-bande {
         width: 430px;
     }
+    .logo {
+        width: 120px;
+    }
     .footer-link {
         padding: 36px 30px;
     }
@@ -303,18 +307,33 @@ select {
 }
 @media screen and (max-width: 550px) {
     .container {
-        padding-right: 192px !important;
+        padding-right: 0 !important;
     }
 }
 @media screen and (max-width: 500px) {
+    .abonnement h2, .abonnement h3 {
+        font-weight: bold;
+    }
     .ask {
         font-size: 13px;
+        width: 90%;
+    }
+    .answer {
+        width: 90%;
+        padding: 16px;
+        font-size: 15px;
+    }
+    .btn-begin {
+        padding: 4px 6px;
+    }
+    .input_email {
+        padding: 10px 10px;
+        width: 300px;
+        margin: 10px;
+        font-size: 12px;
     }
     h1 {
         font-size: 1.7rem !important;
-    }
-    .input_email {
-        width: 200px;
     }
     .img-bande {
         width: 350px;
@@ -326,10 +345,5 @@ select {
 @media screen and (max-width: 450px) {
     .img-bande {
         width: 300px;
-    }
-}
-@media screen and (max-width: 415px) {
-    .container {
-        padding-right: 170px !important;
     }
 }
