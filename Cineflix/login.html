@@ -27,13 +27,32 @@
             <img class="logo_fb" src="assets/css/img/logo_fb.png" alt="logo facebook">
             <p>&nbsp S'identifier avec Facebook</p>
           </div>
-          <P>Première visite sur Cinéflix ? <a class="inscription" href="index.html">Inscrivez-vous</a></P>
+          <P class="visite">Première visite sur Cinéflix ? <a class="inscription" href="index.html">Inscrivez-vous</a></P>
           <p class="recaptcha">Cette page est protégée par Google reCAPTCHA pour nous assurer que vous n'êtes pas un robot.</p>
           <p id="info" style="color: blue;" onclick="afficher_captcha();">En savoir plus.</p>
           <p id="captcha">Les informations collectées par Google reCAPTCHA sont soumises aux <a href="https://policies.google.com/privacy" target="_blank">Règles de confidentialité</a> et <a href="https://policies.google.com/terms" target="_blank">Conditions d'utilisation</a> de Google, et sont utilisées pour fournir, maintenir et améliorer le service reCAPTCHA, ainsi qu'à des fins de sécurité générale (elles ne sont pas utilisées pour les publicités personnalisées par Google).</p>
         </div>
     </div>
-    <p class="p-footer">Des questions ? Appelez le 0805-220-512</p>
+    <div class="p-footer footer-container">
+        <p class="footer-top">Des questions ? Appelez le 0805-220-512</p>
+        <ul class="footer-link">
+            <li class="footer-link-item"><a href="">FAQ</a></li>
+            <li class="footer-link-item"><a href="">Centre d'aide</a></li>
+            <li class="footer-link-item"><a href="">Conditions d'utilisation</a></li>
+            <li class="footer-link-item"><a href="">Confidentialité</a></li>
+            <li class="footer-link-item"><a href="">Préférences de cookies</a></li>
+            <li class="footer-link-item"><a href="">Mentions légales</a></li>
+            <p>
+                <input type="text" name="" id="" style="visibility: hidden;">
+            </p>
+            <p class="langue">
+                <select name="lang" id="lang-select" onChange="location.href=''+this.options[this.selectedIndex].value+'.html';">
+                    <option value="index">Français</option>
+                    <option value="index-en">English</option>
+                </select>
+            </p>
+        </ul>
+    </div>
 </div>
 
 <script src="assets/js/script.js"></script>
