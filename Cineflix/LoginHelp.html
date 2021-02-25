@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="assets/css/style_help.css">
+</head>
+<body>
+<div class="general">
+    <div style="height: 57px;">
+        <a href="index.html"><img src="assets/css/img/cineflix.png" alt="cinéflix" class="logo"></a>
+        <a class="a-id" href="login.html">S'identifier</a>
+    </div>
+    <div class="banner">
+        <div class="banner-text">
+          <h1>E-mail ou mot de passe oublié</h1>
+          <p class="text">Comment souhaitez-vous réinitialiser votre mot de passe ?</p>
+          <form action="">
+              <div class="radio-check">
+                  <div>
+                    <input type="radio" id="E_mail" name="send" value="E_mail" checked onclick="Change()">
+                    <label for="E_mail">E-mail</label>
+                  </div>
+                  <div>
+                    <input type="radio" id="SMS" name="send" value="SMS" onclick="Change()">
+                    <label for="SMS">SMS</label>
+                  </div>
+              </div>
+              <div id="optionemail">
+                <p>Nous vous enverrons les instructions de réinitialisation de votre mot de passe par e-mail.</p>
+                <input class="email" type="mail" placeholder="nom@exemple.com" required><br>
+                <button class="btn-send">Envoyez-moi un e-mail</button>
+              </div>
+              <div id="optionsms">
+                <p>Nous vous enverrons un code de confirmation par SMS pour réinitialiser votre mot de passe. Des frais de SMS peuvent s'appliquer.</p>
+                <input class="email" type="text" placeholder="" required><br>
+                <button class="btn-send">Envoyez-moi un SMS</button>
+              </div>
+          </form>
+          <a class="forget" href="">J'ai oublié mon e-mail ou numéro de téléphone.</a>
+        </div>
+    </div>
+    <div>
+        <p class="recaptcha">Cette page est protégée par Google reCAPTCHA pour nous assurer que vous n'êtes pas un robot. <span id="info" onclick="afficher_captcha();">En savoir plus.</span></p>
+        <p id="captcha">Les informations collectées par Google reCAPTCHA sont soumises aux <a href="https://policies.google.com/privacy" target="_blank">Règles de confidentialité</a> et <a href="https://policies.google.com/terms" target="_blank">Conditions d'utilisation</a> de Google, et sont utilisées pour fournir, maintenir et améliorer le service reCAPTCHA, ainsi qu'à des fins de sécurité générale (elles ne sont pas utilisées pour les publicités personnalisées par Google).</p>
+    </div>
+    <div class="ligne"></div>
+    <div class="p-footer footer-container">
+        <p class="footer-top">Des questions ? Appelez le 0805-220-512</p>
+        <ul class="footer-link">
+            <li class="footer-link-item"><a href="">FAQ</a></li>
+            <li class="footer-link-item"><a href="">Centre d'aide</a></li>
+            <li class="footer-link-item"><a href="">Conditions d'utilisation</a></li>
+            <li class="footer-link-item"><a href="">Confidentialité</a></li>
+            <li class="footer-link-item"><a href="">Préférences de cookies</a></li>
+            <li class="footer-link-item"><a href="">Mentions légales</a></li>
+            <p>
+                <input type="text" name="" id="" style="visibility: hidden;">
+            </p>
+            <p class="langue">
+                <select name="lang" id="lang-select" onChange="location.href=''+this.options[this.selectedIndex].value+'.html';">
+                    <option value="login">Français</option>
+                    <option value="login-en">English</option>
+                </select>
+            </p>
+        </ul>
+    </div>
+</div>
+<script src="assets/js/script.js"></script>
+</body>
+</html>

@@ -21,3 +21,9 @@ function afficher_captcha()
     document.getElementById('info').style.visibility="hidden";
     document.getElementById('captcha').style.visibility="visible";
 }
+
+
+let E_mail = document.getElementById("E_mail");
+let SMS = document.getElementById("SMS");
+let optionemail = document.getElementById("optionemail");
+let optionsms = document.getElementById("optionsms");
