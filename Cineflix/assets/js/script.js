@@ -27,3 +27,14 @@ let E_mail = document.getElementById("E_mail");
 let SMS = document.getElementById("SMS");
 let optionemail = document.getElementById("optionemail");
 let optionsms = document.getElementById("optionsms");
+
+function Change() {
+    if (E_mail.checked) {
+        optionemail.style.display="block";
+        optionsms.style.display="none";
+    }
+    if (SMS.checked) {
+        optionsms.style.display="block";
+        optionemail.style.display="none";
+    }
+}
