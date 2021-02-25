@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="assets/css/style_login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+</head>
+<body>
+<div class="general">
+    <a href="index.html"><img src="assets/css/img/cineflix.png" alt="cinéflix" class="logo"></a>
+    <div class="banner">
+        <div class="banner-text">
+          <h1>Sign In</h1>
+          <form action="">
+              <input class="input" type="text" placeholder="Email or phone number"><br>
+              <input class="input" type="password" placeholder="Password"><br>
+              <button class="btn-id">Sign in</button>
+              <div>
+                <input class="checkbox" type="checkbox" checked> <span class="p-checkbox">Remember me</span>
+                <a class="help" href="LoginHelp.html">Need help ?</a>
+              </div>
+          </form>
+          <div class="fb">
+            <img class="logo_fb" src="assets/css/img/logo_fb.png" alt="logo facebook">
+            <p>&nbsp Login with Facebook</p>
+          </div>
+          <P class="visite">New to Cinéflix ? <a class="inscription" href="index.html">Sign up now</a></P>
+          <p class="recaptcha">This page is protected by Google reCAPTCHA to ensure you're not a bot.</p>
+          <p id="info" style="color: blue;" onclick="afficher_captcha();">Learn more.</p>
+          <p id="captcha">The information collected by Google reCAPTCHA is subject to the Google <a href="https://policies.google.com/privacy" target="_blank">Privacy Policy</a> and <a href="https://policies.google.com/terms" target="_blank">Terms of Service</a>, and is used for providing, maintaining, and improving the reCAPTCHA service and for general security purposes (it is not used for personalized advertising by Google).</p>
+        </div>
+    </div>
+    <div class="ligne"></div>
+    <div class="p-footer footer-container">
+        <p class="footer-top">Questions? Call 0805-220-626</p>
+        <ul class="footer-link">
+            <li class="footer-link-item"><a href="">FAQ</a></li>
+            <li class="footer-link-item"><a href="">Help Center</a></li>
+            <li class="footer-link-item"><a href="">Terms of Use</a></li>
+            <li class="footer-link-item"><a href="">Privacy</a></li>
+            <li class="footer-link-item"><a href="">Cookie Preferences</a></li>
+            <li class="footer-link-item"><a href="">Corporate Information</a></li>
+            <p>
+                <input type="text" name="" id="" style="visibility: hidden;">
+            </p>
+            <p class="langue">
+                <select name="lang" id="lang-select" onChange="location.href=''+this.options[this.selectedIndex].value+'.html';">
+                    <option value="login-en">English</option>
+                    <option value="login">Français</option>
+                </select>
+            </p>
+        </ul>
+    </div>
+</div>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>
