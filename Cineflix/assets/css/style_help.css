@@ -6,7 +6,7 @@ html, body {
 .logo {
     float: left;
     width: 140px;
-    padding-top: 30px;
+    margin-top: 30px;
     margin-left: 20px;
 }
 .a-id {
@@ -14,12 +14,12 @@ html, body {
     color: #e50914;
     padding: 7px 17px;
     text-decoration: none;
-    padding-top: 30px;
     margin-right: 30px;
     line-height: normal;
     border: none;
     font-weight: 700;
     font-size: 1.2em;
+    margin-top: 30px;
 }
 .a-id:hover {
     text-decoration: underline;
@@ -29,9 +29,6 @@ html, body {
 }
 h1 {
     font-size: 60px;
-}
-p {
-    color: #737373;
 }
 .radio-check {
     margin-left: 25px;
@@ -226,39 +223,70 @@ select {
 @media screen and (max-width: 740px) {
     .general {
         background: none;
-        background-color: black;
+        background-color: #f3f3f3;
+        background-color: white;
+    }
+    .a-id {
+        margin-right: 15px;
+        padding-top: 30px;
+        margin-top: 0;
+    }
+    .banner {
+        display: block;
+        margin-bottom: 0;
     }
     .banner h1 {
         padding-top: 20px;
     }
     .banner-text {
         max-width: none;
-        width: 100%;
         margin-bottom: 0;
-        padding: 0 5% !important;
+        padding-bottom: 0;
     }
-    .input {
-        width: calc(100% - 20px);
+    .email {
         overflow: hidden;
         padding: 0;
     }
-    .ligne {
-        height: 1px;
-        background-color: #222222;
-        margin: 0 auto;
-        width: 100%;
+    .forget {
+        font-size: 16px;
+    }
+    .topcaptcha {
+        margin-top: 0;
+        background-color: #f3f3f3;
+        max-width: none;
+    }
+    .topcaptcha p {
+        margin-top: -30px;
+        padding: 0 40px;
+    }
+    #captcha {
+        max-width: max-content;
+        padding: 0 40px 20px;
+        color: #999;
+        font-size: 16px;
+    }
+    .recaptcha {
+        max-width: none;
     }
     ul, .footer-top {
         padding-left: 20px;
         padding-right: 20px;
+        color: #757575;
     }
     .p-footer {
         padding: 30px 0;
+        background: rgba(0,0,0,.75);
+        max-width: none;
     }
 }
 @media screen and (max-width: 700px) {
     .logo {
         width: 100px;
         margin-left: 4.5%;
+    }
+}
+@media screen and (max-width: 510px) {
+    .topcaptcha p {
+        padding-top: 40px;
     }
 }
