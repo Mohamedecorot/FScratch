@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="assets/css/style_help.css">
+</head>
+<body>
+<div class="general">
+    <div style="height: 57px;">
+        <a href="index.html"><img src="assets/css/img/cineflix.png" alt="cinéflix" class="logo"></a>
+        <a class="a-id" href="login.html">Sign In</a>
+    </div>
+    <div class="banner">
+        <div class="banner-text">
+          <h1>Forgot Email/Password</h1>
+          <p class="text">How would you like to reset your password?</p>
+          <form action="">
+              <div class="radio-check">
+                  <div>
+                    <input type="radio" id="E_mail" name="send" value="E_mail" checked onclick="Change()">
+                    <label for="E_mail">Email</label>
+                  </div>
+                  <div>
+                    <input type="radio" id="SMS" name="send" value="SMS" onclick="Change()">
+                    <label for="SMS">Text Message (SMS)</label>
+                  </div>
+              </div>
+              <div id="optionemail">
+                <p>We will send you an email with instructions on how to reset your password.</p>
+                <input class="email" type="mail" placeholder="name@exemple.com" required><br>
+                <button class="btn-send">E-mail me</button>
+              </div>
+              <div id="optionsms">
+                <p>We will text you a verification code to reset your password. Text fees may apply.</p>
+                <input class="email" type="text" placeholder="" required><br>
+                <button class="btn-send">Text Me</button>
+              </div>
+          </form>
+          <a class="forget" href="">I don't remember my email or phone.</a>
+        </div>
+    </div>
+    <div class="topcaptcha">
+        <p class="recaptcha">This page is protected by Google reCAPTCHA to ensure you're not a bot. <span id="info" onclick="afficher_captcha();">Learn more.</span></p>
+        <p id="captcha">The information collected by Google reCAPTCHA is subject to the Google <a href="https://policies.google.com/privacy" target="_blank"> Privacy Policy</a> and <a href="https://policies.google.com/terms" target="_blank">Terms of Service</a>, and is used for providing, maintaining, and improving the reCAPTCHA service and for general security purposes (it is not used for personalized advertising by Google).</p>
+    </div>
+    <div class="ligne"></div>
+    <div class="p-footer footer-container">
+        <p class="footer-top">Questions ? Call 0805-220-512</p>
+        <ul class="footer-link">
+            <li class="footer-link-item"><a href="">FAQ</a></li>
+            <li class="footer-link-item"><a href="">Help Center</a></li>
+            <li class="footer-link-item"><a href="">Terms of Use</a></li>
+            <li class="footer-link-item"><a href="">Privacy</a></li>
+            <li class="footer-link-item"><a href="">Cookie Preferences</a></li>
+            <li class="footer-link-item"><a href="">Corporate Information</a></li>
+            <p>
+                <input type="text" name="" id="" style="visibility: hidden;">
+            </p>
+            <p class="langue">
+                <select name="lang" id="lang-select" onChange="location.href=''+this.options[this.selectedIndex].value+'.html';">
+                    <option value="LoginHelp-en">English</option>
+                    <option value="LoginHelp">Français</option>
+                </select>
+            </p>
+        </ul>
+    </div>
+</div>
+<script src="assets/js/script.js"></script>
+</body>
+</html>
