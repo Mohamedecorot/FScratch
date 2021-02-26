@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forget</title>
+    <link rel="stylesheet" href="assets/css/style_forget.css">
+</head>
+<body>
+<div class="general">
+    <div style="height: 57px;">
+        <a href="index.html"><img src="assets/css/img/cineflix.png" alt="cinéflix" class="logo"></a>
+        <a class="a-id" href="login.html">Sign In</a>
+    </div>
+    <div class="banner">
+        <div class="banner-text">
+          <h1>Forgot Email/Password</h1>
+          <p class="text">Please provide this information to help us find your account (all fields required):</p>
+          <form action="">
+              <div id="optionemail">
+                <label for="prenom">First name on account</label>
+                <input class="email" type="mail" required><br>
+              </div>
+              <div id="optionemail">
+                <label for="nom">Last name on account</label>
+                <input class="email" type="mail" required><br>
+              </div>
+              <div id="optionemail">
+                <label for="cb">Credit or debit card number on file</label>
+                <input class="email" type="mail" required><br>
+              </div>
+              <div id="optionmail">
+                <button class="btn-send">Find Account</button>
+                <button class="btn-send btn-cancel">Cancel</button>
+              </div>
+          </form>
+        </div>
+    </div>
+    <div class="topcaptcha">
+        <p class="recaptcha">This page is protected by Google reCAPTCHA to ensure you're not a bot. <span id="info" onclick="afficher_captcha();">Learn more.</span></p>
+        <p id="captcha">The information collected by Google reCAPTCHA is subject to the Google <a href="https://policies.google.com/privacy" target="_blank"> Privacy Policy</a> and <a href="https://policies.google.com/terms" target="_blank">Terms of Service</a>, and is used for providing, maintaining, and improving the reCAPTCHA service and for general security purposes (it is not used for personalized advertising by Google).</p>
+    </div>
+    <div class="ligne"></div>
+    <div class="p-footer footer-container">
+        <p class="footer-top">Questions ? Call 0805-220-512</p>
+        <ul class="footer-link">
+            <li class="footer-link-item"><a href="">FAQ</a></li>
+            <li class="footer-link-item"><a href="">Help Center</a></li>
+            <li class="footer-link-item"><a href="">Terms of Use</a></li>
+            <li class="footer-link-item"><a href="">Privacy</a></li>
+            <li class="footer-link-item"><a href="">Cookie Preferences</a></li>
+            <li class="footer-link-item"><a href="">Corporate Information</a></li>
+            <p>
+                <input type="text" name="" id="" style="visibility: hidden;">
+            </p>
+            <p class="langue">
+                <select name="lang" id="lang-select" onChange="location.href=''+this.options[this.selectedIndex].value+'.html';">
+                    <option value="LoginHelp-en">English</option>
+                    <option value="LoginHelp">Français</option>
+                </select>
+            </p>
+        </ul>
+    </div>
+</div>
+<script src="assets/js/script.js"></script>
+</body>
+</html>
