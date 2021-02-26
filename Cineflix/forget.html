@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="assets/css/style_help.css">
+    <link rel="stylesheet" href="assets/css/style_forget.css">
 </head>
 <body>
 <div class="general">
@@ -16,30 +16,25 @@
     <div class="banner">
         <div class="banner-text">
           <h1>E-mail ou mot de passe oublié</h1>
-          <p class="text">Comment souhaitez-vous réinitialiser votre mot de passe ?</p>
+          <p class="text">Veuillez entrer ces informations nous permettant d'identifier votre compte (tous les champs sont obligatoires) :</p>
           <form action="">
-              <div class="radio-check">
-                  <div>
-                    <input type="radio" id="E_mail" name="send" value="E_mail" checked onclick="Change()">
-                    <label for="E_mail">E-mail</label>
-                  </div>
-                  <div>
-                    <input type="radio" id="SMS" name="send" value="SMS" onclick="Change()">
-                    <label for="SMS">SMS</label>
-                  </div>
+              <div id="optionemail">
+                <label for="prenom">Prenom du compte</label>
+                <input class="email" type="mail" required><br>
               </div>
               <div id="optionemail">
-                <p>Nous vous enverrons les instructions de réinitialisation de votre mot de passe par e-mail.</p>
-                <input class="email" type="mail" placeholder="nom@exemple.com" required><br>
-                <button class="btn-send">Envoyez-moi un e-mail</button>
+                <label for="nom">Nom du compte</label>
+                <input class="email" type="mail" required><br>
               </div>
-              <div id="optionsms">
-                <p>Nous vous enverrons un code de confirmation par SMS pour réinitialiser votre mot de passe. Des frais de SMS peuvent s'appliquer.</p>
-                <input class="email" type="text" placeholder="" required><br>
-                <button class="btn-send">Envoyez-moi un SMS</button>
+              <div id="optionemail">
+                <label for="cb">Numéro de carte de paiement associé à votre compte</label>
+                <input class="email" type="mail" required><br>
+              </div>
+              <div id="optionmail">
+                <button class="btn-send">Recherchez le compte</button>
+                <button class="btn-send btn-cancel">Annuler</button>
               </div>
           </form>
-          <a class="forget" href="forget.html">J'ai oublié mon e-mail ou numéro de téléphone.</a>
         </div>
     </div>
     <div class="topcaptcha">
