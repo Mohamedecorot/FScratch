@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 const Navigation = () => {
     return (
-        <div class="sidebar">
+        <div className="sidebar">
             <div className="id">
                 <div className="idContent">
                     <img src="./media/logo.png" alt="image de profil"/>
