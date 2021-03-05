@@ -11,6 +11,8 @@ body {
 
 /* ******************HEADER****************** */
 header {
+    position: fixed;
+    top: 0;
     height: 6.25rem !important;
     align-items: center;
     background: #161618;
@@ -21,6 +23,12 @@ header {
     justify-content: space-between;
     padding: 0 .9375rem;
     width: 100%;
+
+    transition: top 0.3s;
+    transition-delay: 0.2s;
+}
+header.hidden {
+    top: -100px;
 }
 .left, .right {
     display: flex;
