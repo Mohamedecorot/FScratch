@@ -1,0 +1,78 @@
+/* ******************GENERAL****************** */
+html {
+    scroll-behavior: smooth;
+}
+body {
+    padding: 0;
+    margin: 0;
+    color: white ;
+    background-color: #161618;
+}
+
+/* ******************HEADER****************** */
+header {
+    height: 6.25rem !important;
+    align-items: center;
+    background: #161618;
+    border-bottom: 1px solid #414143;
+    display: flex;
+    flex-direction: row;
+    height: 3.75rem;
+    justify-content: space-between;
+    padding: 0 .9375rem;
+    width: 100%;
+}
+.left, .right {
+    display: flex;
+}
+.left {
+    margin-top: 20px;
+}
+.left:hover {
+    margin-top: 25px;
+    border-bottom: #e21a41 5px solid;
+}
+.cia {
+    max-height: 2.8125rem;
+    max-width: 7.5rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 7px;
+    line-height: 1rem;
+}
+.logo-cia {
+    width: 60px;
+    height: auto;
+    margin-right: .9375rem;
+}
+.right {
+    margin-right: 30px;
+}
+.careers {
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: .8125rem .9375rem;
+    line-height: .875rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: .0625rem solid #e21a41;
+}
+.careers:hover {
+    color: #e21a41;
+    margin-top: 24px;
+    border-bottom: #e21a41 5px solid;
+}
+.fa-bars {
+    font-size: 30px;
+    margin: 0 .9375rem 0 1.875rem;
+    margin-top: 27px;
+    margin-left: 5px;
+}
+.fa-bars:hover::before {
+    border: #e21a41 1px solid;
+    border-bottom: #e21a41 5px solid;
+    margin-left: -5px;
+    margin-right: -3px;
+    padding: 2px 2px 0 4px;
+}
