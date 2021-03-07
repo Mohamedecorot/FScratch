@@ -13,3 +13,7 @@ document.addEventListener('scroll',() => {
     lastScrollValue = top;
 });
 
+// Affichage aléatoire de l'image du heros
+
+let x = document.getElementById("photo");
+x.innerHTML = "<img src=\"./media/hero/Hero-"+Math.floor((Math.random()*6)+1)+".png\" width=\"500px\" height=\"auto\" />";
