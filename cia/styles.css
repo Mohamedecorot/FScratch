@@ -97,8 +97,6 @@ header.hidden {
 }
 .mb30 {
     padding: 5px;
-    /* border-left: #e21a41 1px solid; */
-
 }
 .ccc {
     border-left: #e21a41 1px solid;
@@ -172,3 +170,4 @@ header.hidden {
     /* display: none; */
     transition: padding .5s ease-in-out;
 }
+
