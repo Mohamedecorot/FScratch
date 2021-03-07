@@ -171,3 +171,64 @@ header.hidden {
     transition: padding .5s ease-in-out;
 }
 
+/* ******************AGENCE****************** */
+.agence {
+    background: #fff;
+    color: #000;
+}
+.container2 {
+    margin: 0 auto !important;
+}
+.boussole {
+    width: 100px;
+    height: auto;
+}
+.row  {
+    padding-top: 7.5rem;
+    padding-bottom: 7.5rem;
+    display: flex;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+.agence-left h2 {
+    padding-top: 1.875rem;
+    font-size: 2.5rem;
+    line-height: 42px;
+    padding-right: 20px;
+}
+.agence-left {
+    width: 50%;
+	float: left;
+    padding-right: -15px;
+    padding-left: 120px;
+}
+.agence-right {
+    width: 50%;
+	float: left;
+    border-left: #000 1px solid;
+    padding-right: 135px;
+    padding-left: 15px;
+}
+.agence-right h5 {
+    font-size: 1.5rem;
+    line-height: 24px;
+}
+.agence-right p {
+    font-size: 16px;
+    line-height: 24px;
+}
+.agence-right a {
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: #e21a41 1px solid;
+    transition-delay: color 1s;
+    transition: background-color 1s;
+}
+.agence-right a:hover {
+    color: #fff !important;
+    background: #e21a41;
+}
+.agence-right a:visited {
+    color: #000;
+}
