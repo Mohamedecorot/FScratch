@@ -57,7 +57,7 @@ header.hidden {
 .right {
     margin-right: 30px;
 }
-.careers {
+.careers, .discover {
     font-size: 20px;
     font-weight: bold;
     cursor: pointer;
@@ -67,7 +67,7 @@ header.hidden {
     text-transform: uppercase;
     border: .0625rem solid #e21a41;
 }
-.careers:hover {
+.careers:hover, .discover:hover {
     color: #e21a41;
     margin-top: 20px;
     padding-bottom: calc(.875rem - 5px);
@@ -175,40 +175,39 @@ header.hidden {
 .agence {
     background: #fff;
     color: #000;
+    display: flex;
+    justify-content: center;
+    height: 75vh;
 }
-.container2 {
-    margin: 0 auto !important;
+.agence-left, .agence-right {
+    margin: 0 auto;
+}
+.agence-left {
+    width: 50%;
+    align-items:flex-start;
+    justify-content: center;
+    padding-left: 70px;
+    padding-top: 110px;
 }
 .boussole {
     width: 100px;
     height: auto;
 }
-.row  {
-    padding-top: 7.5rem;
-    padding-bottom: 7.5rem;
-    display: flex;
-    justify-content: center;
-    margin-right: auto;
-    margin-left: auto;
-}
 .agence-left h2 {
-    padding-top: 1.875rem;
+    padding-top: 0;
     font-size: 2.5rem;
     line-height: 42px;
     padding-right: 20px;
 }
-.agence-left {
-    width: 50%;
-	float: left;
-    padding-right: -15px;
-    padding-left: 120px;
-}
 .agence-right {
     width: 50%;
-	float: left;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
     border-left: #000 1px solid;
-    padding-right: 135px;
-    padding-left: 15px;
+    padding-top: 80px;
+    padding-left: 20px;
+    padding-right: 50px;
 }
 .agence-right h5 {
     font-size: 1.5rem;
