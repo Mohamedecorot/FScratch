@@ -231,3 +231,63 @@ header.hidden {
 .agence-right a:visited {
     color: #000;
 }
+/* ******************DRAPEAU****************** */
+.drapeau {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+.drapeau-left, .drapeau-right {
+    margin: 0 auto;
+}
+.img-drapeau {
+    width: 450px;
+    height: auto;
+}
+.drapeau-left {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.drapeau-right {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid #fff;
+}
+.drapeau-left, .drapeau-right {
+    width: 50% !important;
+}
+.drap {
+    max-width: 65%;
+}
+.drap h2 {
+    margin-bottom: 3.975rem;
+    font-size: 3.2rem;
+    line-height: 42px;
+    font-weight: bold;
+}
+.drap h5 {
+    font-size: 1.525rem;
+    line-height: 24px;
+    margin-bottom: 1.875rem;
+}
+.drap p {
+    font-size: 1.325rem;
+    line-height: 24px;
+    margin-bottom: 1.875rem;
+}
+.discover {
+    transition: color .5s;
+    transition: border .5s;
+}
+.discover:hover {
+    color: #e21a41 !important;
+}
+
+.discover:visited {
+    color: #fff;
+}
