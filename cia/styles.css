@@ -57,7 +57,7 @@ header.hidden {
 .right {
     margin-right: 30px;
 }
-.careers, .discover {
+.careers, .discover, .explore {
     font-size: 20px;
     font-weight: bold;
     cursor: pointer;
@@ -250,7 +250,6 @@ header.hidden {
     align-items: center;
     justify-content: center;
 }
-
 .drapeau-right {
     width: 50%;
     display: flex;
