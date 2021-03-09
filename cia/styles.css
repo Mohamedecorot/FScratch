@@ -405,3 +405,42 @@ header.hidden {
     width: 670px;
     height: auto;
 }
+/* ******************GLOBE****************** */
+.link {
+    height: 80vh;
+}
+.content {
+    width: calc(100% - 30px);
+    padding-top: 7.5rem;
+    padding-bottom: 7.5rem;
+    max-width: 82%;
+    margin: 0 auto;
+    /* margin-top: 50px; */
+}
+.column {
+    display: flex;
+    justify-content: center;
+}
+.column h3 {
+    font-size: 30px;
+}
+.links {
+    display: flex;
+    flex-direction: column;
+    padding-right: 15px;
+    padding-left: 15px;
+    max-width: 230px;
+}
+.links a {
+    /* padding-top: 10px; */
+    padding-bottom: .9375rem;
+    margin-bottom: calc(1.45rem / 2);
+    font-weight: 400;
+    font-size: 20px;
+}
+.links a:visited {
+    color: #fff !important;
+}
+.linka {
+
+}
