@@ -57,7 +57,7 @@ header.hidden {
 .right {
     margin-right: 30px;
 }
-.careers, .discover, .explore {
+.careers, .discover, .explore, .linka {
     font-size: 20px;
     font-weight: bold;
     cursor: pointer;
@@ -67,7 +67,7 @@ header.hidden {
     text-transform: uppercase;
     border: .0625rem solid #e21a41;
 }
-.careers:hover, .discover:hover {
+.careers:hover, .discover:hover, .linka:hover {
     color: #e21a41;
     margin-top: 20px;
     padding-bottom: calc(.875rem - 5px);
