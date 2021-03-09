@@ -217,18 +217,18 @@ header.hidden {
     font-size: 16px;
     line-height: 24px;
 }
-.agence-right a {
+.agence-right a, .globe-left a {
     font-weight: bold;
     text-decoration: none;
     border-bottom: #e21a41 1px solid;
     transition-delay: color 1s;
     transition: background-color 1s;
 }
-.agence-right a:hover {
+.agence-right a:hover, .globe-left a:hover {
     color: #fff !important;
     background: #e21a41;
 }
-.agence-right a:visited {
+.agence-right a:visited, .globe-left a:visited {
     color: #000;
 }
 /* ******************DRAPEAU****************** */
@@ -256,9 +256,6 @@ header.hidden {
     align-items: center;
     justify-content: center;
     border-left: 1px solid #fff;
-}
-.drapeau-left, .drapeau-right {
-    width: 50% !important;
 }
 .drap {
     max-width: 65%;
@@ -319,6 +316,10 @@ header.hidden {
     border: 1px solid #000;
     margin-right: 15px;
     margin-left: 15px;
+    transition: border .5s;
+}
+.card:hover {
+    border: #e21a41 2px solid;
 }
 .card h3 {
     max-width: 270px;
@@ -358,7 +359,6 @@ header.hidden {
     color: #e21a41 !important;
     border-bottom: #e21a41 5px solid;
 }
-
 .explore:visited {
     color: #000;
 }
