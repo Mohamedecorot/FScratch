@@ -67,7 +67,7 @@ header.hidden {
     text-transform: uppercase;
     border: .0625rem solid #e21a41;
 }
-.careers:hover, .discover:hover, .linka:hover {
+.careers:hover, .discover:hover {
     color: #e21a41;
     margin-top: 20px;
     padding-bottom: calc(.875rem - 5px);
@@ -367,6 +367,7 @@ header.hidden {
     display: flex;
     justify-content: center;
     height: 82vh;
+    border-bottom: #fff 1px solid;
 }
 .globe-left, .globe-right {
     margin: 0 auto;
@@ -402,18 +403,20 @@ header.hidden {
     border-left: 1px solid #fff;
 }
 .globe-ter {
-    width: 670px;
-    height: auto;
+    width: 674px;
+    height: 521px;
 }
 /* ******************GLOBE****************** */
 .link {
     height: 80vh;
+    padding-bottom: 30px;
+    border-bottom: #fff 1px solid;
 }
 .content {
     width: calc(100% - 30px);
     padding-top: 7.5rem;
     padding-bottom: 7.5rem;
-    max-width: 82%;
+    max-width: 90%;
     margin: 0 auto;
     /* margin-top: 50px; */
 }
@@ -427,20 +430,62 @@ header.hidden {
 .links {
     display: flex;
     flex-direction: column;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 25px;
+    padding-left: 25px;
     max-width: 230px;
 }
-.links a {
-    /* padding-top: 10px; */
+.lin a:hover {
+    color: #fff !important;
+    background: #e21a41;
+    text-decoration: none;
+}
+.lin {
     padding-bottom: .9375rem;
     margin-bottom: calc(1.45rem / 2);
-    font-weight: 400;
     font-size: 20px;
+    font-weight: bold;
+    transition-delay: color 1s;
+    transition: background-color 1s;
 }
-.links a:visited {
+.lin a {
+    font-weight: 300;
+    transition-delay: color 1s;
+    transition: background-color 1s;
+}
+.lin a:visited, .linka:visited {
     color: #fff !important;
 }
+.linka a {
+    text-decoration: none;
+}
 .linka {
-
+    transition-delay: color 1s;
+    transition: color 1s;
+}
+.linka:hover {
+    color: #e21a41 !important;
+    border-bottom: #e21a41 5px solid;
+}
+.rep {
+    width: 235px;
+}
+.ccia {
+    margin-top: 50px;
+}
+.logo {
+    width: 290px;
+}
+.connect{
+    margin-top: 310px;
+    margin-bottom: 0;
+}
+.fab {
+    color: #fff;
+    margin-right: 20px;
+    font-size: 30px;
+    transition: transform .5s;
+}
+.fab:hover {
+    color: #e21a41;
+    transform: translateY(-5px);
 }
