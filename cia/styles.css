@@ -489,3 +489,28 @@ header.hidden {
     color: #e21a41;
     transform: translateY(-5px);
 }
+/* ******************FOOTER****************** */
+.footer {
+    display: flex;
+    margin-right: 0;
+}
+.footer-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 130px;
+    border-left: 1px solid #fff;
+    padding-left: 30px;
+    margin-right: 200px;
+}
+.footer-link a {
+    color: #fff;
+    font-size: 20px;
+    padding-right: 30px;
+}
+.footer-link a:visited {
+    color: #fff;
+}
+.coco {
+    border-left: 1px solid #fff;
+}
