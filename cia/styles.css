@@ -49,6 +49,13 @@ header.hidden {
     margin-top: 7px;
     line-height: 1rem;
 }
+.cia-hidden {
+    display: none;
+    font-size: 50px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
 .logo-cia {
     width: 60px;
     height: auto;
