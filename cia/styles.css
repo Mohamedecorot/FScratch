@@ -95,40 +95,42 @@ header.hidden {
 }
 
 /* ******************HERO****************** */
-.h1 {
-    padding-top: 9rem !important;
+.container {
+    display: flex;
+    justify-content: center;
+    height: 95.6vh;
+    padding-top: 100px;
+}
+.container-left, .container-right {
+    margin: 0 auto;
+}
+.container-left {
+    width: 50%;
+    align-items:flex-start;
+    justify-content: center;
+    padding-left: 70px;
+    padding-top: 110px;
+}
+.container-left h1 {
     font-size: 5rem;
     font-weight: bold;
     line-height: .9em;
     margin-bottom: 0;
+    margin-top: 0;
 }
-.mb30 {
-    padding: 5px;
+.red {
+    border-left: 1px solid #e21a41;
+    padding-left: 5px;
 }
-.ccc {
-    border-left: #e21a41 1px solid;
-}
-.mb30 h5 {
+.container-left h5 {
     font-size: 25px;
     padding: 4px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
-.mb30 p {
+.container-left p {
     margin-top: 10px;
-}
-.container {
-    padding: 0 10%;
-    display: flex;
-}
-.homepage-image {
-    border-left: 1px solid rgb(165, 160, 160);
-    border-right: 1px solid rgb(165, 160, 160);
-}
-.hero {
-    margin-top: 200px;
-    width: 500px;
-    height: auto;
+    font-size: 18px;
 }
 .call {
     display: flex;
@@ -176,6 +178,19 @@ header.hidden {
     width: auto;
     /* display: none; */
     transition: padding .5s ease-in-out;
+}
+.container-right {
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    border-left: rgb(161, 158, 158) 1px solid;
+    padding-top: 80px;
+    padding-left: 20px;
+    padding-right: 50px;
+}
+.hero {
+    width: 150%;
 }
 
 /* ******************AGENCE****************** */
@@ -262,7 +277,7 @@ header.hidden {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-left: 1px solid #fff;
+    border-left: rgb(161, 158, 158) 1px solid;
 }
 .drap {
     max-width: 65%;
@@ -374,7 +389,7 @@ header.hidden {
     display: flex;
     justify-content: center;
     height: 82vh;
-    border-bottom: #fff 1px solid;
+    border-bottom: rgb(161, 158, 158) 1px solid;
 }
 .globe-left, .globe-right {
     margin: 0 auto;
@@ -407,7 +422,7 @@ header.hidden {
     width: 50%;
     align-items:flex-start;
     justify-content: center;
-    border-left: 1px solid #fff;
+    border-left: rgb(161, 158, 158) 1px solid;
 }
 .globe-ter {
     width: 674px;
@@ -417,7 +432,7 @@ header.hidden {
 .link {
     height: 80vh;
     padding-bottom: 30px;
-    border-bottom: #fff 1px solid;
+    border-bottom: rgb(161, 158, 158) 1px solid;
 }
 .content {
     width: calc(100% - 30px);
@@ -506,7 +521,7 @@ header.hidden {
     justify-content: center;
     align-items: center;
     height: 130px;
-    border-left: 1px solid #fff;
+    border-left: rgb(161, 158, 158) 1px solid;
     padding-left: 30px;
     margin-right: 200px;
 }
@@ -519,5 +534,5 @@ header.hidden {
     color: #fff;
 }
 .coco {
-    border-left: 1px solid #fff;
+    border-left: rgb(161, 158, 158) 1px solid;
 }
