@@ -98,7 +98,7 @@ header.hidden {
 .container {
     display: flex;
     justify-content: center;
-    height: 95.6vh;
+    min-height: 95.6vh;
     padding-top: 100px;
 }
 .container-left, .container-right {
@@ -191,6 +191,7 @@ header.hidden {
 }
 .hero {
     width: 150%;
+    justify-content: flex-end;
 }
 
 /* ******************AGENCE****************** */
