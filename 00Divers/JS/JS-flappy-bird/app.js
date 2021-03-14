@@ -11,12 +11,28 @@ const size = [51, 36];
 const jump = -11.5;
 const cTenth = (canvas.width / 10);
 
+// réglage des poteaux (tuyeaux)
+const pipeWidth = 78;
+const pipeGap = 270;
+const pipeLoc = () => (Math.random() * ((canvas.height - (pipeGap + pipeWidth)) - pipeWidth)) + pipeWidth;
+
 let index = 0;
 let bestScore = 0;
 let currentScore = 0;
 let pipes = [];
 let flight;
 let flyHeight;
+
+
+// setup de l'application au démarrage
+const setup = () => {
+    currentScore = 0;
+    flight = jump;
+    flyHeight = (canvas.height / 2) - (size[1] / 2);
+
+    // ajout des poteaux
+    pipes = Array(3).fill().map((a, i) => [canvas.width + (i * (pipeGap + pipeWidth)), pipeLoc()]);
+}
 
 const render = () => {
     index ++;
@@ -43,9 +59,31 @@ const render = () => {
         ctx.font = "bold 30px courier";
     }
 
+    // Affichage des tuyeaux
+    if (gamePlaying) {
+        pipes.map(pipe => {
+            pipe[0] -= speed;
+
+            // tuyeaux du haut
+            ctx.drawImage(img, 432, 588 - pipe[1], pipeWidth, pipe[1], pipe[0], 0, pipeWidth, pipe[1]);
+            // tuyeaux du bas
+            ctx.drawImage(img, 432 + pipeWidth, 108, pipeWidth, canvas.height - pipe[1] + pipeGap, pipe[0], pipe[1] + pipeGap, pipeWidth, canvas.height - pipe[1] + pipeGap);
+
+            if (pipe[0] <= -pipeWidth) {
+                // augmentation du score
+                currentScore++;
+                bestScore = Math.max(bestScore, currentScore);
+
+                // suppression et renouvellement des tuyeaux
+                pipes = [...pipes.slice(1), [pipes[pipes.length-1][0] + pipeGap + pipeWidth, pipeLoc()]];
+            }
+        })
+    }
+
     window.requestAnimationFrame(render);
 }
 
+setup();
 img.onload = render;
 document.addEventListener('click', () => gamePlaying = true)
 window.onclick = () => flight = jump;
