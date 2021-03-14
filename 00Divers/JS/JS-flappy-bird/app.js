@@ -80,6 +80,10 @@ const render = () => {
         })
     }
 
+    // Affichage du score
+    document.getElementById('bestScore').innerHTML = `Best : ${bestScore}`;
+    document.getElementById('currentScore').innerHTML = `Current : ${currentScore}`;
+
     window.requestAnimationFrame(render);
 }
 
