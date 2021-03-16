@@ -90,3 +90,46 @@ header {
 .section-2 .img {
   background: url(../../assets/img/img-right.jpg) center/cover;
 }
+/***************** CONTACT ******************/
+.contact {
+  text-align: center;
+  position: relative;
+  padding: 60px 0;
+}
+.form-grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100px 224px;
+  grid-template-areas:
+    "input1 input2"
+    "texta texta";
+  gap: 10px;
+  width: 85%;
+  max-width: 600px;
+  margin: 30px auto;
+}
+.textarea {
+  grid-area: texta;
+}
+label {
+  font-weight: 600;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+input[type="text"],
+textarea {
+  width: 100%;
+  margin: 20px 0 40px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  transition: 0.2s;
+}
+input[type="text"]:focus,
+textarea:focus {
+  border: 2px solid skyblue;
+}
+textarea {
+  resize: none;
+  height: 180px;
+}
